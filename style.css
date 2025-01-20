@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 105vh;
     margin: 0;
     background-color: #e8abe8ed;
     margin-top: 100px;
@@ -49,8 +49,9 @@ body {
     background-color: #0056b3;
 }
 
-h1 {
+h1, h2 {
     margin-bottom: 0px;
+    padding: 0px;
 }
 
 .board {
