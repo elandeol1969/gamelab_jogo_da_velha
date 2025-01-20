@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Velha</h1>
+        <div id="players-input" class="players-input">
+            <label for="player1">Jogador 1 (X):</label>
+            <input type="text" id="player1" placeholder="Nome do Jogador 1">
+            <label for="player2">Jogador 2 (O):</label>
+            <input type="text" id="player2" placeholder="Nome do Jogador 2">
+            <button onclick="startGame()">Iniciar Jogo</button>
+        </div>
+        <div id="game-board" class="hidden">
+             <div class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+           </div>
+
+             <p id="turn-indicator"></p>
+            <div class="buttons">
+                <button onclick="resetGame()">Reiniciar Partida</button>
+               <button onclick="resetScore()">Zerar Placar</button>
+           </div>
+        </div>
+        <div id="score-board" class="score-board hidden">
+            <h2>Placar</h2>
+            <ul id="score-list"></ul>
+         </div>
+       
+         <div id="message-area" class="message-area hidden">
+            <p id="message-text"></p>
+            <button id="close-message-button">Fechar</button>
+         </div>
+
+     </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
